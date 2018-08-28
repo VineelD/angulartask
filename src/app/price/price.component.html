@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Wine Prices List</h1>
+  <div class="table-responsive">
+  <table class="table" border="1" style="text-align:center">
+    <thead>
+      <tr style="background-color: gray;">
+	  <th>Wine/Vintage</th>
+        <th>2010</th>
+        <th>2011</th>
+        <th>2012</th>
+		<th>2013</th>
+        <th>2014</th>
+        <th>2015</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let price of prices">
+	  <td style="background-color: gray">{{price.label}}</td>
+        <td *ngFor="let elem of price.WinePrice">{{ elem.$numberDecimal| number:'1.2-2' }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+<div *ngIf="chart">
+  <canvas style="width:100%" id="canvas">{{ chart }}</canvas>
+</div>
+</div>
