@@ -2,26 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
-## Development server
+# Steps to run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1) Extract the files to a folder named 'angulartask'
+2) Start local mongodb server.
+3) Navigate to folder 'angulartask' in command line.
+4) Run 'npm start'
+The server is started. The static data is entered in to the mongoDB database by default at the time of application start.
 
-## Code scaffolding
+Navigate to http://localhost:3000/prices in the browser and view the Grid and Chart.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+RestfulApi:
+Navigate to http://localhost:3000/price/    -- retrieves json containing the static table data
+Navigate to http://localhost:3000/price/2   -- retrieves json for Wine type 'B'
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
